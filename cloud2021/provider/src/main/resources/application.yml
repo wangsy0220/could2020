@@ -1,0 +1,30 @@
+server:
+  port: 8085
+
+spring:
+  application:
+    name: cloud-gateway
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enable: true  #开启从服务在注册中心动态创建路由的功能
+      routes:
+        - id: payment_route
+          uri: lb://cloud-payment-service
+          predicates:
+            - Path=/payment/get/** # 路径相匹配的进行路由
+
+
+eureka:
+  instance:
+    name: cloud-gateway-service
+  client:
+    servie-url:
+      register-with-eureka: false
+      fetch-regustry: true
+      defaultZone: http://127.0.0.1:7001/eureka
+
+
+
+

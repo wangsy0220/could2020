@@ -1,0 +1,7 @@
+FROM java:8
+ENV ARTIFACTID eureka-server
+ENV ARTIFACTVERSION 1.0-SNAPSHOT
+ENV HOME_PATH E:\学习文档\SpringBoot\cloud2021\eureka-server\target
+WORKDIR $HOME_PATH
+ADD /$ARTIFACTID-$ARTIFACTVERSION.jar $HOME_PATH/$ARTIFACTID.jar
+ENTRYPOINT["java","‐jar","eureka-server-center.jar"

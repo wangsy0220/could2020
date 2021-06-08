@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="eureka-server" />
+        <module name="springboot-xxl-job" />
+        <module name="dubbo-provider" />
+        <module name="provider" />
+        <module name="payment-cloud" />
+        <module name="feign-cloud" />
+      </profile>
+    </annotationProcessing>
+  </component>
+</project>
