@@ -9,7 +9,9 @@ import org.springframework.context.annotation.Scope;
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.concurrent.ConcurrentHashMap;
-
+/**
+ * add by wangsy 20210609
+ * */
 @SpringBootApplication
 @EnableEurekaServer
 public class EurekaMain {
